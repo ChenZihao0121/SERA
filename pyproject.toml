@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools==75.8.2", "wheel==0.45.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sera-rl"
+version = "0.1.0"
+description = "SERA: Scale-Equalized Rollout Allocation for Maximum Likelihood Reinforcement Learning"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dynamic = ["dependencies"]
+
+[tool.setuptools.packages.find]
+include = ["verl*", "evaluation*", "qwen*"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.package-data]
+verl = ["version/*", "trainer/config/*.yaml"]
+evaluation = ["paper_assets.json"]
+
+[tool.ruff]
+line-length = 160

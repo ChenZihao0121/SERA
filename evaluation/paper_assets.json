@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "profiles": {
+    "smollm": {
+      "datasets": [
+        "gsm8k_platinum"
+      ],
+      "tokenizer": {
+        "repo": "HuggingFaceTB/SmolLM2-360M-Instruct",
+        "revision": "a10cc1512eabd3dde888204e902eca88bddb4951",
+        "eos_token_id": 2,
+        "tokenizer_sha256": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+        "template_sha256": "dc126cf0155881b6f71b8e9a239956ae0ba45f68df08b016dadddf4c61120217"
+      }
+    },
+    "qwen25": {
+      "datasets": [
+        "beyondaime",
+        "aime25",
+        "math500",
+        "olympiadbench"
+      ],
+      "tokenizer": {
+        "repo": "Qwen/Qwen2.5-Math-1.5B",
+        "revision": "4a83ca6e4526a4f2da3aa259ec36c259f66b2ab2",
+        "eos_token_id": 151643,
+        "tokenizer_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+        "template_sha256": "230d1937ae3ca45994a4c140b655d7ed0395837410575320320b8498572b31bb"
+      }
+    },
+    "qwen3": {
+      "datasets": [
+        "beyondaime",
+        "aime25",
+        "math500",
+        "minerva"
+      ],
+      "tokenizer": {
+        "repo": "ftajwar/qwen3_4B_Base_MaxRL_Polaris_1000_steps",
+        "revision": "780e2854e74b36158f4add85cb33192621f8009d",
+        "eos_token_id": 151643,
+        "tokenizer_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "template_sha256": "3bd74c5f0a7abbccbbbed03dd91e5d25a2288e506d558e721d0fe60782bcf781"
+      }
+    }
+  },
+  "datasets": {
+    "beyondaime": {
+      "repo": "ByteDance-Seed/BeyondAIME",
+      "revision": "c705198ae1043810b1e1693bd879250b51a7a523",
+      "file": "data/test.parquet",
+      "question": "problem",
+      "rows": 100,
+      "source_sha256": "969750458ae4796e783b6b5ae004cf48587f10683bd5b5ac00220c50561e1df6"
+    },
+    "aime25": {
+      "repo": "math-ai/aime25",
+      "revision": "563bb8404243c5f09de6ec262f2db674fe5bce9b",
+      "file": "test.jsonl",
+      "question": "problem",
+      "rows": 30,
+      "source_sha256": "b4e273c02d3e7fe1b74b59eae768fc8230bfb0f79539890cb56f4361caac0331"
+    },
+    "math500": {
+      "repo": "HuggingFaceH4/MATH-500",
+      "revision": "6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be",
+      "file": "test.jsonl",
+      "question": "problem",
+      "rows": 500,
+      "source_sha256": "35dc41080a3680858b27fa7e0533d2d547825316fc5dafe5d316f4ccc5a06132"
+    },
+    "minerva": {
+      "repo": "math-ai/minervamath",
+      "revision": "ee46ddc498933b1977577953250ca5c66be64f96",
+      "file": "test.jsonl",
+      "question": "question",
+      "rows": 272,
+      "source_sha256": "e04ec2bc1d8f80a0091b4b1989f1ffb366f3583f5bae381546a066d4ccc26e3d"
+    },
+    "olympiadbench": {
+      "source": "github",
+      "repo": "QwenLM/Qwen2.5-Math",
+      "revision": "a45202bd16f1ec06f433442dc1152d0074773465",
+      "file": "evaluation/data/olympiadbench/test.jsonl",
+      "question": "question",
+      "rows": 675,
+      "url": "https://raw.githubusercontent.com/QwenLM/Qwen2.5-Math/a45202bd16f1ec06f433442dc1152d0074773465/evaluation/data/olympiadbench/test.jsonl",
+      "source_sha256": "bb8c1e38a16ea9eacb77530315a674d883f267fbff79183effc53681b4fcc416"
+    },
+    "gsm8k_platinum": {
+      "repo": "madrylab/gsm8k-platinum",
+      "revision": "e762492455a1cf7967de89f05b6bef72fc713b66",
+      "file": "main/test-00000-of-00001.parquet",
+      "question": "question",
+      "rows": 1209,
+      "question_answer_sha256": "1d368717131a8b3b53e647ed64fa8ba190522f6cd54ea0ae7b1dbeebce206997",
+      "source_sha256": "0c466762794c61ef364b7f72c3cb7e8bf9e5d8feca2c62e1bfce81eae7c7a1ea"
+    }
+  }
+}
