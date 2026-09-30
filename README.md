@@ -95,4 +95,14 @@ Built on [MaxRL](https://github.com/tajwarfahim/maxrl) and [verl](https://github
 
 ## Citation
 
-Coming soon.
+```bibtex
+@misc{chen2026serascaleequalizedrolloutallocation,
+  title={SERA: Scale-Equalized Rollout Allocation for Maximum Likelihood Reinforcement Learning},
+  author={Zihao Chen and Fanxiang Xiong and Hongran Ren and Xuefeng Bai and Zhongxiang Dai and Kehai Chen and Zhiguo Zhang and Zhiyong Wang and Yu Cheng},
+  year={2026},
+  eprint={2609.36552},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  url={https://arxiv.org/abs/2609.36552},
+}
+```
